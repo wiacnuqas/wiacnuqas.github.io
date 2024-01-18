@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>KALKULATOR</title>
+  </head>
+  <body>
+    <div class="Konten">
+      <h2 class="kaltik">KALTIK KALKULATOR MATEMATIKA</h2>
+      <p>Selamat Datang Di Kaltik</p>
+      <!--
+      <center><p class="Kotak"></p></center>-->
+      <p>
+        <button onclick="keliling()">Hitung Keliling</button>
+      </p>
+      <p><button onclick="luas()">Hitung Luas</button></p>
+      <hr />
+    </div>
+    <div hidden id="hitungkeliling" class="hitungkeliling">
+      <h2>Menghitung Keliling Kotak</h2>
+      <center><p class="Kotak"></p></center>
+      <p1>Rumus Menghitung Keliling Yaitu :</p1>
+      <p>K = 4 X S</p>
+      <p1>Dimana : S adalah sisi</p1>
+      <form>
+        <input
+          type="number"
+          id="kelilingsisi"
+          class="sisi"
+          placeholder="Masukan Nilai Sisi"
+        />
+      </form>
+      <button onclick="hitungkeliling()">Hitung</button>
+      <p></p>
+    </div>
+
+    <div hidden id="jawabankeliling" class="jawabankeliling">
+      <h2>Jawaban Keliling</h2>
+      <p id="totalkel"></p>
+    </div>
+
+    <div hidden id="hitungluas" class="hitungluas">
+      <h2>Menghitung Luas Kotak</h2>
+      <center><p class="Kotak"></p></center>
+      <p1>Rumus Menghitung Luas Yaitu :</p1>
+      <p>L = S X S</p>
+      <p1>Dimana : S adalah sisi</p1>
+      <form>
+        <input
+          type="number"
+          id="sisiluas"
+          class="luas"
+          placeholder="Masukan Nilai Sisi"
+        />
+
+        <button onclick="hitungluas()">Hitung</button>
+        <p></p>
+      </form>
+    </div>
+
+    <div hidden id="jawabanluas" class="jawabanluas">
+      <h2>Jawaban Luas</h2>
+      <p id="totalluas"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
